@@ -9,7 +9,7 @@ module.exports = function(app) {
     })
 
     app.get(`*`, function (req, res) {
-        return res.sendFile(`*`, {root:__dirname+"/../public"})
+        return res.sendFile(`/`, {root:__dirname+"/../public"})
     })
   };
 
